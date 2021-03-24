@@ -19,9 +19,9 @@ export function Header() {
     ]
 
     return (
-        <header className='mainHeader'>
+        <header className='main-header'>
 
-            <div>
+            <div className="logo-container">
                 Logo
             </div>
 
@@ -32,7 +32,7 @@ export function Header() {
 
                             return (
                                 <li key={id}>
-                                    <Link to={item.url}>{item.name}</Link>
+                                    <Link to={item.url} className="list-item">{item.name}</Link>
                                 </li>
                             )
                         })
